@@ -1,30 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>团乐购</title>
+    <script>
+        // 动态设置根元素fontsize
+        (function (window) {
+            document.querySelector('html').style.fontSize = window.screen.width / 10 + 'px';
+        })(window)
+    </script>
     <link rel="stylesheet" href="./css/style.css">
-    <style>
-        .box{
-            width: 100%;
-            height: 100px;
-        }
-        .box div{
-            height: 100%;
-            background-color: rebeccapurple;
-            width: 30%;
-        }
-    </style>
 </head>
-<body>
-    <div class="box" flex="main:justify">
-        <div></div>
-        <div></div>
-        <div></div>
+
+<body class="body swiper-container swiper-container-horizontal">
+    <div class="body-wraper swiper-wrapper">
+        <!-- 首页区域 start -->
+        <div class="body-slide swiper-slide ">
+            <header class="top" flex="main:center cross:center">
+                <!-- logo -->
+                <h1>
+                    <img class="top-logo" src="./images/logo.png" alt="团乐购">
+                </h1>
+            </header>
+            <!-- 导航条 -->
+            <nav class="nav swiper-no-swiping">
+                <ul class="nav-wrap" flex="main:justify cross:center">
+                    <!-- 滑动导航条 -->
+                    <li class="cur" flex="main:center cross:center">
+                        <a href="javascript:;">首页</a>
+                    </li>
+                    <li flex="main:center cross:center">
+                        <a href="javascript:;">服装搭配</a>
+                    </li>
+                    <li flex="main:center cross:center">
+                        <a href="javascript:;">美鞋穿搭</a>
+                    </li>
+                    <li flex="main:center cross:center">
+                        <a href="javascript:;">箱包系列</a>
+                    </li>
+                    <li flex="main:center cross:center">
+                        <a href="javascript:;">精美饰品</a>
+                    </li>
+                    <li flex="main:center cross:center">
+                        <a href="javascript:;">明星穿搭</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- 主内容区 -->
+            <main class="main">
+                <!-- 轮播图 -->
+                <div class="main-swiper swiper-container swiper-container-horizontal">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide-active" style="width: 100%; margin-right: 30px;">
+                            <!-- 轮播图图片 -->
+                            <img src="http://www.tuanlego.com/resource/image/one.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-slide-next" style="width: 100%; margin-right: 30px;">
+                            <img src="http://www.tuanlego.com/resource/image/one.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide" style="width: 100%; margin-right: 30px;">
+                            <img src="http://www.tuanlego.com/resource/image/one.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide" style="width: 100%; margin-right: 30px;">
+                            <img src="http://www.tuanlego.com/resource/image/one.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide" style="width: 100%; margin-right: 30px;">
+                            <img src="http://www.tuanlego.com/resource/image/one.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="main-pagination swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+                        <!-- 轮播图翻页器 -->
+                        <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                        <span class="swiper-pagination-bullet"></span>
+                        <span class="swiper-pagination-bullet"></span>
+                        <span class="swiper-pagination-bullet"></span>
+                        <span class="swiper-pagination-bullet"></span>
+                    </div>
+                </div>
+                <!-- swiper end -->
+                <!-- post list start -->
+                <ul class="main-post">
+                    <li class="main-post-list">
+                        <a href="" flex="dir:top">
+                            <!-- 列表标题 -->
+                            <p class="main-post-list-p">想要健康的生活习惯这些小细节少不了</p>
+                            <!-- 列表图片 -->
+                            <div class="main-post-list-main">
+                                <img src="http://img.tuanlego.com/201707/151115635786274028001.jpg" alt="">
+                                <img src="http://img.tuanlego.com/201707/151115635786274028001.jpg" alt="">
+                                <img src="http://img.tuanlego.com/201707/151115635786274028001.jpg" alt="">
+                            </div>
+                            <!-- 列表下方分类 -->
+                            <div class="main-post-list-tips">
+                                <i>皮鞋 皮包</i>
+                                &nbsp;&nbsp;
+                                <span>2017.7.1</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="main-post-list">
+                        <a href="" flex="dir:top main:justify">
+                            <p class="main-post-list-p">想要健康的生活习惯这些小细节少不了</p>
+                            <div class="main-post-list-main">
+                                <img src="http://img.tuanlego.com/201707/151115635786274028001.jpg" alt="">
+                                <img src="http://img.tuanlego.com/201707/151115635786274028001.jpg" alt="">
+                                <img src="http://img.tuanlego.com/201707/151115635786274028001.jpg" alt="">
+                            </div>
+                            <div class="main-post-list-tips">
+                                <i>皮鞋 皮包</i>
+                                &nbsp;&nbsp;
+                                <span>2017.7.1</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="main-post-list">
+                        <a href="" flex="dir:top">
+                            <p class="main-post-list-p">想要健康的生活习惯这些小细节少不了</p>
+                            <div class="main-post-list-main">
+                                <img src="http://img.tuanlego.com/201707/151115635786274028001.jpg" alt="">
+                                <img src="http://img.tuanlego.com/201707/151115635786274028001.jpg" alt="">
+                                <img src="http://img.tuanlego.com/201707/151115635786274028001.jpg" alt="">
+                            </div>
+                            <div class="main-post-list-tips">
+                                <i>皮鞋 皮包</i>
+                                &nbsp;&nbsp;
+                                <span>2017.7.1</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="main-post-list">
+                        <a href="" flex="dir:top">
+                            <p class="main-post-list-p">想要健康的生活习惯这些小细节少不了</p>
+                            <div class="main-post-list-main">
+                                <img src="http://img.tuanlego.com/201707/151115635786274028001.jpg" alt="">
+                                <img src="http://img.tuanlego.com/201707/151115635786274028001.jpg" alt="">
+                                <img src="http://img.tuanlego.com/201707/151115635786274028001.jpg" alt="">
+                            </div>
+                            <div class="main-post-list-tips">
+                                <i>皮鞋 皮包</i>
+                                &nbsp;&nbsp;
+                                <span>2017.7.1</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="main-post-list">
+                        <a href="" flex="dir:top">
+                            <p class="main-post-list-p">想要健康的生活习惯这些小细节少不了</p>
+                            <div class="main-post-list-main">
+                                <img src="http://img.tuanlego.com/201707/151115635786274028001.jpg" alt="">
+                                <img src="http://img.tuanlego.com/201707/151115635786274028001.jpg" alt="">
+                                <img src="http://img.tuanlego.com/201707/151115635786274028001.jpg" alt="">
+                            </div>
+                            <div class="main-post-list-tips">
+                                <i>皮鞋 皮包</i>
+                                &nbsp;&nbsp;
+                                <span>2017.7.1</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <!-- post list end -->
+            </main>
+        </div>
+        <!-- 首页区域 end -->
+        <!-- 分类区域 start -->
+        <div class="category swiper-slide">
+            <!-- 顶部logo -->
+            <header class="top" flex="main:center cross:center">
+                <!-- logo -->
+                <h1>
+                    <img class="top-logo" src="./images/logo.png" alt="团乐购">
+                </h1>
+            </header>
+            <!-- 分类列表 -->
+            <main class="category-main">
+                <ul>
+                    <!-- 单个分类 -->
+                    <li class="category-main-li">
+                        <a href="" flex="cross:center">
+                            <div class="category-main-li-pic">
+                                <!-- 小图标 -->
+                                <img src="http://img.tuanlego.com/201707/151115635786274028001.jpg" alt="">
+                            </div>
+                            <div>
+                                <!-- 标题 -->
+                                <p class="category-main-li-p">情感空间</p>
+                                <!-- 标题下的tips -->
+                                <div class="category-main-li-tip" flex="dir:top">
+                                    <i class="iconfont icon-guanyanren">&nbsp;12345</i>
+                                    <span class="iconfont icon-xiaoxi">&nbsp;09876</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category-main-li">
+                            <a href="" flex="cross:center">
+                                <div class="category-main-li-pic">
+                                    <img src="http://img.tuanlego.com/201707/151115635786274028001.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p class="category-main-li-p">情感空间</p>
+                                    <div class="category-main-li-tip" flex="dir:top">
+                                        <i class="iconfont icon-guanyanren">&nbsp;12345</i>
+                                        <span class="iconfont icon-xiaoxi">&nbsp;09876</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="category-main-li">
+                                <a href="" flex="cross:center">
+                                    <div class="category-main-li-pic">
+                                        <img src="http://img.tuanlego.com/201707/151115635786274028001.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="category-main-li-p">情感空间</p>
+                                        <div class="category-main-li-tip" flex="dir:top">
+                                            <i class="iconfont icon-guanyanren">&nbsp;12345</i>
+                                            <span class="iconfont icon-xiaoxi">&nbsp;09876</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="category-main-li">
+                        <a href="" flex="cross:center">
+                            <div class="category-main-li-pic">
+                                <img src="http://img.tuanlego.com/201707/151115635786274028001.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="category-main-li-p">情感空间</p>
+                                <div class="category-main-li-tip" flex="dir:top">
+                                    <i class="iconfont icon-guanyanren">&nbsp;12345</i>
+                                    <span class="iconfont icon-xiaoxi">&nbsp;09876</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </main>
+        </div>
+        <!-- 首页区域 end -->
+        <!-- 我的区域 start -->
+        <div class="body-slide swiper-slide">
+            <header class="top" flex="main:center cross:center">
+                <!-- logo -->
+                <h1>
+                    <img class="top-logo" src="./images/logo.png" alt="团乐购">
+                </h1>
+            </header>
+
+        </div>
+        <!-- 我的区域 end -->        
+
     </div>
+    <!-- 底部tabbar -->
+    <footer class="body-foot swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-no-swiping" flex="main:justify">
+        <span class="swiper-pagination-bullet swiper-pagination-bullet-active">首页</span>
+        <span class="swiper-pagination-bullet">分类</span>
+        <span class="swiper-pagination-bullet">我的</span>
+    </footer>
 </body>
 <script src="./base/swiper/swiper.min.js"></script>
 <script src="./js/index.js"></script>
+
 </html>
