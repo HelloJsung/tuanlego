@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1407,7 +1408,8 @@ button.swiper-pagination-bullet {
   content: "\e640";
 }
 
-html, body {
+html,
+body {
   height: 100%;
   line-height: 1;
   font-family: "Helvetica Neue", 'Helvetica', 'Roboto', 'Arial', 'sans-serif';
@@ -1424,7 +1426,8 @@ html, body {
 }
 
 .body-wraper {
-  flex: 1;
+  height: 93%;
+  overflow: scroll;
 }
 
 .body-foot {
@@ -1460,7 +1463,9 @@ html, body {
   padding-right: 0.09709rem;
 }
 
-.body .swiper-pagination-bullets, .body .swiper-pagination-custom, .body .swiper-pagination-fraction {
+.body .swiper-pagination-bullets,
+.body .swiper-pagination-custom,
+.body .swiper-pagination-fraction {
   bottom: 0;
 }
 
@@ -1632,13 +1637,91 @@ html, body {
   color: #999;
 }
 
-.details {
-  position: absolute;
-  display: none;
-  top: 0;
-  left: 0;
-  z-index: 99;
-  width: 100%;
-  height: 100%;
-  background-color: deeppink;
+.detail {
+  background-color: #fff;
 }
+
+.detail .top {
+  width: 100%;
+  height: 1.21359rem;
+  box-sizing: border-box;
+  padding: 0 0.36408rem;
+  background-color: #f84e4e;
+  color: #fff;
+  font-size: 16px;
+}
+
+.detail .top-title {
+  font-size: 14px;
+  width: 75%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.detail .main {
+  box-sizing: border-box;
+  padding: 0.12136rem 0.48544rem;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.detail .main-title {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  line-height: 0.67961rem;
+}
+
+.detail .main-class {
+  width: 100%;
+  font-size: 12px;
+  color: #666;
+  line-height: 0.67961rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail .main-class-author {
+  color: #f84e4e;
+  padding-right: right;
+}
+
+.detail .main-class-pop {
+  color: #f84e4e;
+}
+
+.detail .main-label {
+  width: 100%;
+  font-size: 12px;
+  line-height: 0.67961rem;
+}
+
+.detail .main-label a {
+  color: #f84e4e;
+  padding-right: 0.24272rem;
+}
+
+.detail .main-details {
+  font-size: 14px;
+  color: #666;
+}
+
+.detail .main-details span {
+  line-height: 0.67961rem;
+}
+
+.detail .main-details img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.detail .main-details p {
+  font-family: "微软雅黑";
+  font-weight: bold;
+}
+ 
+
+ /*# sourceMappingURL= style.css.map */
