@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>团乐购</title>
+    <script>
+        // 动态设置根元素fontsize
+        (function (window) {
+            document.querySelector('html').style.fontSize = window.screen.width / 10 + 'px';
+        })(window)
+    </script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="body-wraper">
+        <!-- 首页区域 start -->
+        <header class="top" flex="main:center cross:center">
+            <!-- logo -->
+            <h1>
+                <img class="top-logo" src="./images/logo.png" alt="团乐购">
+            </h1>
+        </header>
+        <!-- 主内容区 -->
+        <main class="main">
+        </main>
+    </div>
+
+
+    <!-- 底部tabbar -->
+    <footer class="body-foot" flex="main:justify">
+        <span class="iconfont icon-shouye">首页</span>
+        <span class="iconfont icon-fenlei">分类</span>
+        <span class="iconfont con-wode">我的</span>
+    </footer>
+</body>
+<script src="./base/swiper/swiper.min.js"></script>
+<!-- <script src="./js/index.js"></script> -->
+<script>
+    document.querySelector('header').addEventListener('click', function () {
+        window.history.back()
+    })
+</script>
+
+</html>

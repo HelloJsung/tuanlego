@@ -5,7 +5,11 @@
           el: '.swiper-pagination',
           clickable: true,
         },
-        noSwiping:true
+        noSwiping:true,
+        hashNavigation: {
+            watchState: true,
+          },
+
       });
     
     var mainSwiper = new Swiper('.main-swiper', {
