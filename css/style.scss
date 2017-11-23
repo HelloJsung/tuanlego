@@ -23,10 +23,9 @@ body {
     height: 100%;
     &-wraper {
         height: 93%;
-        overflow: scroll;
     }
     &-foot {
-        height: 7%;
+        height: 8%;
         width: 100%;
         margin: 0;
         bottom: 0;
@@ -66,21 +65,21 @@ body {
 
 .top {
     width: 100%;
-    height: 7%;
+    height: 8%;
     box-sizing: border-box;
     background-color: #fff;
     border-bottom: 2px solid #f84e4e;
+    padding: rem(20);
     h1 {
         margin: 0;
         padding: 0;
         line-height: 0;
-    } // &-logo{
-    // }
+    }
 }
 
 .nav {
     width: 100%;
-    height: 5%;
+    height: 7%;
     background-color: #fff;
     overflow-x: scroll;
     &-wrap {
@@ -110,7 +109,6 @@ body {
 
 .main {
     margin-top: 2px;
-    margin-bottom: rem(40);
     &-swiper {
         height: rem(160);
         text-align: center;
@@ -210,79 +208,3 @@ body {
         }
     }
 }
-
-// 详情页start
-.detail {
-    background-color: #fff;    
-    .top {
-        width: 100%;
-        height: rem(50);
-        box-sizing: border-box;
-        padding: 0 rem(15);
-        background-color: #f84e4e;
-        color: #fff;
-        font-size: 16px;
-        &-title {
-            font-size: 14px;        
-            width: 75%;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-    }
-    .main{
-        box-sizing: border-box;
-        padding:rem(5) rem(20);
-        font-size: 14px;
-        overflow: hidden;
-        &-title{
-            font-size: 16px;
-            padding: 0;
-            margin: 0;
-            font-weight: normal;
-            line-height: rem(28);
-        }
-        &-class{
-            width: 100%;
-            font-size: 12px;
-            color: #666;
-            line-height: rem(28);
-            display: flex;
-            justify-content: space-between;
-            &-author{
-                color: #f84e4e;
-                padding-right: right;
-            }
-            &-pop{
-                color: #f84e4e
-            }
-        }
-        &-label{
-            width: 100%;
-            font-size: 12px;
-            line-height: rem(28);
-            a{
-                color: #f84e4e;
-                padding-right: rem(10);
-            }
-        }
-        &-details{
-            font-size: 14px;
-            color: #666;
-            span{
-                line-height: rem(28);
-            }
-            img{
-                display: block;
-                width: 80%;
-                margin: 0 auto;
-            }
-            p{
-                font-family: "微软雅黑";
-                font-weight: bold;
-            }
-        }
-    }
-}
-
-// 详情页end

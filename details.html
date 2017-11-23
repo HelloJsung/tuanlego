@@ -12,7 +12,7 @@
             document.querySelector('html').style.fontSize = window.screen.width / 10 + 'px';
         })(window)
     </script>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/details.css">
 </head>
 
 <body class="body detail">
@@ -23,6 +23,35 @@
             <p class="top-title">女生们情人节不要只知道收礼哦！盘点最适合送给男生的惊喜礼物</p>
             <i class="top-share iconfont icon-fenxiang"></i>
         </header>
+        <!-- <header class="top" flex="main:center cross:center">
+            <h1>
+                <img class="top-logo" src="./images/logo.png" alt="团乐购">
+            </h1>
+        </header> -->
+        <!-- 导航条 -->
+        <nav class="nav swiper-no-swiping">
+            <ul class="nav-wrap" flex="main:justify cross:center">
+                <!-- 滑动导航条 -->
+                <li class="cur" flex="main:center cross:center">
+                    <a href="javascript:;">首页</a>
+                </li>
+                <li flex="main:center cross:center">
+                    <a href="javascript:;">服装搭配</a>
+                </li>
+                <li flex="main:center cross:center">
+                    <a href="javascript:;">美鞋穿搭</a>
+                </li>
+                <li flex="main:center cross:center">
+                    <a href="javascript:;">箱包系列</a>
+                </li>
+                <li flex="main:center cross:center">
+                    <a href="javascript:;">精美饰品</a>
+                </li>
+                <li flex="main:center cross:center">
+                    <a href="javascript:;">明星穿搭</a>
+                </li>
+            </ul>
+        </nav>
         <!-- 主内容区 -->
         <main class="main">
             <div class="main-wraper">
@@ -72,20 +101,59 @@
                         <img src="http://img.tuanlego.com/201707/151136018954114632310.jpg"> </div>
             </div>
         </main>
+        <div class="like" flex="main:center">
+            <i class="iconfont icon-zan"><span>210</span></i>
+            <i class="iconfont icon-zan-copy"><span>10</span></i>
+        </div>
+        <div class="share" flex="main:justify cross:center">
+            <span class="share-line"></span>
+            <i class="share-wb iconfont icon-iconfontweibowukuang-copy"></i>
+            <i class="share-kj iconfont icon-kongjian"></i>
+            <i class="share-wx iconfont icon-weixin"></i>
+            <span class="share-line"></span>
+        </div>
+        <div class="reco">
+            <div class="reco-title">相关推荐</div>
+            <ul class="reco-list">
+                <li><a href="">
+                    <p>女生们情人节不要只知道收礼哦！盘点最适合送给男生的惊喜礼物</p>    
+                    <img src="http://img.tuanlego.com/201707/151136017816455149605.jpg" alt="">
+                    <img src="http://img.tuanlego.com/201707/151136017816455149605.jpg" alt="">
+                    <img src="http://img.tuanlego.com/201707/151136017816455149605.jpg" alt="">
+                </a></li>
+                <li><a href="">
+                        <p>女生们情人节不要只知道收礼哦！盘点最适合送给男生的惊喜礼物</p>    
+                        <img src="http://img.tuanlego.com/201707/151136017816455149605.jpg" alt="">
+                        <img src="http://img.tuanlego.com/201707/151136017816455149605.jpg" alt="">
+                        <img src="http://img.tuanlego.com/201707/151136017816455149605.jpg" alt="">
+                </a></li>
+            </ul>
+            <div class="reco-title">相关阅读</div>
+            <ul class="reco-list reco-read">
+                <li><a href="">
+                    <p>女生们情人节不要只知道收礼哦！盘点最适合送给男生的惊喜礼物</p>    
+                </a></li>
+                <li><a href="">
+                        <p>女生们情人节不要只知道收礼哦！盘点最适合送给男生的惊喜礼物</p>    
+                </a></li>
+            </ul>
+        </div>
+        <div class="comment" flex="main:justify">
+            <input type="text" placeholder="写评论...">
+            <i class="iconfont icon-guanyanren"></i>
+        </div>
     </div>
 
 
     <!-- 底部tabbar -->
     <footer class="body-foot" flex="main:justify">
-        <span class="iconfont icon-shouye">首页</span>
-        <span class="iconfont icon-fenlei">分类</span>
-        <span class="iconfont con-wode">我的</span>
+        <a href="./index.html#main"><span class="iconfont icon-shouye">首页</span></a>
+        <a href="./index.html#category"><span class="iconfont icon-fenlei">分类</span></a>
+        <a href="./index.html#mine"><span class="iconfont con-wode">我的</span></a>
     </footer>
 </body>
-<script src="./base/swiper/swiper.min.js"></script>
-<!-- <script src="./js/index.js"></script> -->
 <script>
-    document.querySelector('top-back').addEventListener('click', function () {
+    document.querySelector('.top-back').addEventListener('click', function () {
         window.history.back()
     })
 </script>
