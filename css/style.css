@@ -1570,8 +1570,14 @@ body {
 }
 
 .main-swiper {
-  height: 3.8835rem;
+  height: 4.34466rem;
   text-align: center;
+}
+
+.main-swiper a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .main-swiper img {
