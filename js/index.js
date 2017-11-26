@@ -32,9 +32,6 @@
         },{
             tips:'分类',
             class:'icon-fenlei'
-        },{
-            tips:'我的',
-            class:'icon-wode'
         }].forEach(function(val,i){
             footSpan[i].innerText = val.tips;
             footSpan[i].classList.add('iconfont');

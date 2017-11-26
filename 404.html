@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>团乐购</title>
+    <script>
+        // 动态设置根元素fontsize
+        (function (window) {
+            document.querySelector('html').style.fontSize = window.screen.width / 10 + 'px';
+        })(window)
+    </script>
+        <link rel="stylesheet" href="./css/mine.css">
+        <style>
+            .main-404{
+                margin: 50px 0;
+            }
+            .main a{
+                display: block;
+                margin: 0 auto;
+                color: white;
+                background-color: #f84e4e;
+                width: 130px;
+                height: 30px;
+                line-height: 30px;
+                text-decoration: none;
+                border-radius: 10px;
+            }
+        </style>
+</head>
+
+<body class="body detail">
+    <div class="body-wraper">
+        <!-- 首页区域 start -->
+        <!-- <header class="top" flex="main:justify cross:center">
+            <i class="top-back iconfont icon-fanhui"></i>
+            <p class="top-title">女生们情人节不要只知道收礼哦！盘点最适合送给男生的惊喜礼物</p>
+            <i class="top-share iconfont icon-fenxiang"></i>
+        </header> -->
+        <header class="top" flex="main:center cross:center">
+            <h1>
+                <img class="top-logo" src="./images/logo.png" alt="团乐购">
+            </h1>
+        </header>
+        <!-- 导航条 -->
+        <nav class="nav swiper-no-swiping">
+            <ul class="nav-wrap" flex="main:justify cross:center">
+                <!-- 滑动导航条 -->
+                <li class="cur" flex="main:center cross:center">
+                    <a href="javascript:;">首页</a>
+                </li>
+                <li flex="main:center cross:center">
+                    <a href="javascript:;">服装搭配</a>
+                </li>
+                <li flex="main:center cross:center">
+                    <a href="javascript:;">美鞋穿搭</a>
+                </li>
+                <li flex="main:center cross:center">
+                    <a href="javascript:;">箱包系列</a>
+                </li>
+                <li flex="main:center cross:center">
+                    <a href="javascript:;">精美饰品</a>
+                </li>
+                <li flex="main:center cross:center">
+                    <a href="javascript:;">明星穿搭</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- 主内容区 -->
+        <main class="main">
+            <div class="main-404">
+            <img src="./images/404.png" alt="">            
+            </div>
+            <a href="./index.html">返回首页</a>
+        </main>
+        <div class="copyright">
+                <p><a href="javascript:;">电脑版</a>&nbsp;<a href="javascript:;">手机版</a></p>
+                <p><a href="./index.html">&copy;团乐购</a>&nbsp;沪ICP备15009410号-1</p>
+        </div>
+    </div>
+
+
+    <!-- 底部tabbar -->
+    <footer class="body-foot" flex="main:justify">
+        <a href="./index.html#main"><span class="iconfont icon-shouye">首页</span></a>
+        <a href="./index.html#category"><span class="iconfont icon-fenlei">分类</span></a>
+        <a href="./index.html#mine"><span class="iconfont icon-wode">我的</span></a>
+    </footer>
+</body>
+<script>
+    document.querySelector('.top-back').addEventListener('click', function () {
+        window.history.back()
+    })
+</script>
+
+</html>

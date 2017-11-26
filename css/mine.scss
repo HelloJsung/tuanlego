@@ -22,11 +22,11 @@ body {
     flex-direction: column;
     height: 100%;
     &-wraper {
-        height: 100%;
+        height: 92%;
         overflow: scroll;
     }
     &-foot {
-        // height: 8%;
+        height: 8%;
         width: 100%;
         margin: 0;
         bottom: 0;
@@ -166,8 +166,8 @@ body {
         width: 100%;
         height: rem(54);
         box-sizing: border-box;
-        background-color: #f84e4e;
-        border: 0;
+        // background-color: #f84e4e;
+        // border: 0;
         color: #fff;
         font-size: 16px;
         &-title {
@@ -182,56 +182,12 @@ body {
         }
     }
     .main{
-        box-sizing: border-box;
-        padding:rem(5) rem(20);
-        font-size: 14px;
-        overflow: hidden;
-        &-title{
-            font-size: 16px;
-            padding: 0;
-            margin: 0;
-            font-weight: normal;
-            line-height: rem(28);
-        }
-        &-class{
-            width: 100%;
-            font-size: 12px;
-            color: #666;
-            line-height: rem(28);
-            display: flex;
-            justify-content: space-between;
-            &-author{
-                color: #f84e4e;
-                padding-right: right;
-            }
-            &-pop{
-                color: #f84e4e
-            }
-        }
-        &-label{
-            width: 100%;
-            font-size: 12px;
-            line-height: rem(28);
-            a{
-                color: #f84e4e;
-                padding-right: rem(10);
-            }
-        }
-        &-details{
-            font-size: 14px;
-            color: #666;
-            span{
-                line-height: rem(28);
-            }
-            img{
-                display: block;
-                width: 80%;
-                margin: 0 auto;
-            }
-            p{
-                font-family: "微软雅黑";
-                font-weight: bold;
-            }
+        font-size: 16px;
+        text-align: center;
+        img{
+            width: 90%;
+            display: block;
+            margin: 0 auto;
         }
     }
     .like{

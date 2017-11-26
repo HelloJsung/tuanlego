@@ -1446,12 +1446,11 @@ body {
 }
 
 .body-wraper {
-  height: 93%;
+  height: 100%;
   overflow: scroll;
 }
 
 .body-foot {
-  height: 8%;
   width: 100%;
   margin: 0;
   bottom: 0;
@@ -1802,6 +1801,16 @@ body {
   font-size: 0.72816rem;
   color: #666;
   padding: 0.09709rem 0.24272rem 0;
+}
+
+.detail .copyright {
+  font-size: 12px;
+  text-align: center;
+}
+
+.detail .copyright a {
+  text-decoration: none;
+  color: #333;
 }
  
 
